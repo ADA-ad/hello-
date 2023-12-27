@@ -15,11 +15,15 @@ public class HelloController {
     public  String deleteHello() {
         return "delete hello";
     }
+
     @GetMapping("/hello2")
     public String hello2() {
-        return "hello ADA2";
+        return "hello ADA";
 
     }
+    @DeleteMapping("/hello2")
+    public String DeleteHello2() {return "delete ADA";};
+
     @GetMapping("/dogs")
     public Dog getdog() {
         return new Dog("ルイー", "パピヨン",5);

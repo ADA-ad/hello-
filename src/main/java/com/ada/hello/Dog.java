@@ -1,10 +1,10 @@
 package com.ada.hello;
 
 public class Dog {
-    private String name;
-    private String breed;
+    private final String name;
+    private final String breed;
 
-    private int age;
+    private final int age;
 
     public Dog(String name, String breed, int age) {
         this.name = name;
