@@ -7,8 +7,8 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class HelloController {
     @GetMapping("/hello")
-    public String hello() {
-        return "hello world";
+    public HelloResponse hello() {
+        return new HelloResponse("hello world");
 
     }
     @DeleteMapping("/hello")
@@ -18,6 +18,11 @@ public class HelloController {
     @GetMapping("/hello2")
     public String hello2() {
         return "hello ADA2";
+
+    }
+    @GetMapping("/dogs")
+    public Dog getdog() {
+        return new Dog("ルイー", "パピヨン",5);
 
     }
 }
