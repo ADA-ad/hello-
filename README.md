@@ -1,3 +1,4 @@
 # このプロジェクトについて 
 
-このプロジェクトではSpring Bootを使ってhello world をレスポンスするREST APIを作成します。
+このプロジェクトではSpring Bootを使ってhello world をレスポンスするREST APIを作成します。 
+
